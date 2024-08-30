@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        /* h1:nth-child(3), h1:nth-child(4)
+        {
+            color:green;
+        } */
+
+        /* [class*="x"]
+        {
+            color:red;
+        } */
+       
+        
+    </style>
+   
+</head>
+<body>
+
+    <h1 class="x">heading</h1>
+    <h1 class="x">heading</h1>
+    <h1 >heading</h1>
+    <h1 >heading</h1>
+    <h1 class="x">heading</h1>
+
+    <p class="x">sdfsd</p>
+
+    <script>
+
+        // $('h1').first().css("color","red");
+        // $('h1').last().css("color","green");
+        // $('h1').eq(3).css("color","pink");
+
+        // $('h1').css("color","red");
+        // $('.x').css("color","green")
+
+
+        // $('h1').filter(".x").css("color","gray");
+
+        $('h1').not(".x").css("color","gray");
+
+    </script>
+    
+</body>
+</html>

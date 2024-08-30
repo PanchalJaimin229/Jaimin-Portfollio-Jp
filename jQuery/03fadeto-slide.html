@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="konHeyaarHe.js"></script>
+    <style>
+        .q,.a 
+        {
+            background: lightblue;
+            border: 2px solid;
+        }
+        .a 
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        hello
+    </p>
+
+    <div class="q">Question?</div>
+    <div class="a">Lopsum dolor sit amet consectetur, adipisicing elit. Perferendis, architecto. Sed impedit neque quisquam nesciunt nostrum ipsum amet quam totam non voluptatem! A quasi praesentium iste, exercitationem laudantium maxime consectetur?</div>
+
+
+    <script>
+        // div1 = document.querySelector('.q');
+        // div1.innerHTML = "Answer..!"
+
+        // $('p').fadeOut();
+        // $('p').fadeIn();
+        // $('p').fadeTo('slow',0.45)
+        // $('p').fadeTo('medium',0.45)
+
+        $('p').fadeTo('fast',0.45)
+
+
+       
+
+        $('.q').click(function(){
+
+            $('.q').html("<u>Answer..!</u>")
+            $('.a').slideToggle();
+        })
+
+    </script>
+    
+</body>
+</html>
